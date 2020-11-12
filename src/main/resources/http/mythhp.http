@@ -1,0 +1,41 @@
+###
+
+GET http://localhost:8080/user/get/8
+token: fd106c4cea55669668d268af97e4dcd729037f048d6f68bfbaba2f4ba1cb604e16d48ff3c3e34c233e55081d7a0a36aa
+###token: fd106c4cea55669668d268af97e4dcd729037f048d6f68bfbaba2f4ba1cb604e16d48ff3c3e34c233e55081d7a0a36aa
+###token:ee1f2681064d65d6247993bc16d9aab25861caa44779e988719ec4ad3e5934f6
+##token:270be88871db0222cee220ecceb8debee9faf7866b5610b6f32dcf121609fdf0e79e557d07ed70ccc782b188d918adf9
+###
+POST http://localhost:8080/user/post
+token: fd106c4cea55669668d268af97e4dcd729037f048d6f68bfbaba2f4ba1cb604e16d48ff3c3e34c233e55081d7a0a36aa
+Content-Type: application/json
+
+{
+  "userName": "多对多xx",
+  "psw": "123456",
+  "authorities": [
+    {
+      "authorityId": 0,
+      "authorityName": "user"
+    }
+  ]
+}
+###
+GET http://localhost:8080/user/getAll
+token: fd106c4cea55669668d268af97e4dcd729037f048d6f68bfbaba2f4ba1cb604e16d48ff3c3e34c233e55081d7a0a36aa
+###
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "userName": "y",
+  "psw": "y"
+}
+###
+DELETE http://localhost:8080/user/delete
+token: fd106c4cea55669668d268af97e4dcd729037f048d6f68bfbaba2f4ba1cb604e16d48ff3c3e34c233e55081d7a0a36aa
+Content-Type: application/json
+
+{
+  "userId": 18
+}
