@@ -7,7 +7,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 @SpringBootApplication
 public class ShopApplication {
-
+//这里是分支一代码
     public static void main(String[] args) {
         SpringApplication.run(ShopApplication.class, args);
     }
