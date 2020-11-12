@@ -29,6 +29,7 @@ public String encry(Map map)  {
 }
 public Map decry(String string)  {
     try {
+        //这里是主版本
         String josh = Encryptors.text(password, salt).decrypt(string);
         return mapper.readValue(josh,Map.class);
     } catch (JsonProcessingException e) {
