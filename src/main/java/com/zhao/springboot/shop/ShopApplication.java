@@ -9,6 +9,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class ShopApplication {
 
     public static void main(String[] args) {
+        //这里是主版本
         SpringApplication.run(ShopApplication.class, args);
     }
 
